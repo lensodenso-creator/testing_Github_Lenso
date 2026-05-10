@@ -1,0 +1,639 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2025.12.24 15:49:17 =~=~=~=~=~=~=~=~=~=~=~=
+
+Initializing Hardware ...
+
+Checking for PCIe device presence...done
+System integrity status: 0x610
+Rom image verified correctly
+
+
+System Bootstrap, Version 17.6.1, RELEASE SOFTWARE
+Copyright (c) 1994-2021 by cisco Systems, Inc.
+
+
+Current image running: Boot ROM0
+
+Last reset cause: LocalSoft
+ISR4431/K9 platform with 4194304 Kbytes of main memory
+
+rommon 1 > 
+rommon 1 > 
+rommon 1 > dir
+Incorrect Usage
+rommon 2 > dir flash:
+
+0   0         drw-     lost+found
+0   0         drw-     sysboot
+0   0         drw-     .prst_sync
+0   4400      -rw-     mode_event_log
+0   0         -rw-     .sdwaninstaller
+0   0         drw-     .rollback_timer
+0   0         drw-     core
+0   0         drw-     .USWAP
+0   0         drw-     .CRFT
+0   0         drw-     gs_script
+0   138115    -rw-     memleak.tcl
+0   20109     -rw-     ios_core.p7b
+0   1314      -rw-     trustidrootx3_ca.ca
+0   0         drw-     .dbpersist
+0   0         drw-     virtual-instance
+0   0         drw-     vman_fdb
+0   0         drw-     tracelogs
+0   0         drw-     pnp-info
+0   0         drw-     onep
+0   0         drw-     license_evlog
+0   30        -rw-     throughput_monitor_params
+0   0         drw-     guest-share
+0   255       -rw-     .iox_dir_list
+0   0         drw-     iox_data_share
+0   0         drw-     iox_host_data_share
+0   0         drw-     iox
+0   0         drw-     pnp-tech
+0   23697     -rw-     backup-03022023.cfg
+0   0         drw-     SHARED-IOX
+0   0         drw-     sdwan
+0   3926      -rw-     original-xe-config
+0   419430400 -rw-     .sdwaninstallerfs
+0   0         drw-     .sdwaninstaller
+0   0         drw-     .sdwaninternal
+0   0         drw-     vmanage-admin
+0   0         drw-     .cdb_backup
+0   0         drw-     .geo
+0   107       -rw-     pki_certificates
+0   2822076   -rw-     pp-adv-isr4000-179.1a-46-68.0.0.pack
+0   0         drw-     pcap
+0   1939      -rw-     trustidrootx3_ca_062035.ca
+0   0         drw-     docker
+0   0         drw-     caf
+0   784796767 -rw-     old-isr4400-universalk9.17.12.05a.SPA.bin
+0   773068285 -rw-     new-isr4400-universalk9.17.09.04a.SPA.bin
+0   1923      -rw-     trustidrootx3_ca_092024.ca
+0   2003      -rw-     2108_E_3rd_St.txt
+rommon 3 > 
+rommon 3 > boot flash:new-isr4400-universalk9.17.09.04a.SPA.bin
+Located new-isr4400-universalk9.17.09.04a.SPA.bin
+##############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+
+Package header rev 3 structure detected
+IsoSize = 738131968
+Performing Integrity Check ...
+Performing Signature Verification ...
+RSA Signed RELEASE Image Signature Verification Successful.
+Image validated
+Dec 24 20:52:11.538: %BOOT-5-OPMODE_LOG: R0/0: binos: System booted in AUTONOMOUS mode
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           Cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software [Cupertino], ISR Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.9.4a, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2023 by Cisco Systems, Inc.
+Compiled Fri 20-Oct-23 10:59 by mcpre
+
+
+This software version supports only Smart Licensing as the software licensing mechanism.
+
+
+PLEASE READ THE FOLLOWING TERMS CAREFULLY. INSTALLING THE LICENSE OR
+LICENSE KEY PROVIDED FOR ANY CISCO SOFTWARE PRODUCT, PRODUCT FEATURE,
+AND/OR SUBSEQUENTLY PROVIDED SOFTWARE FEATURES (COLLECTIVELY, THE
+"SOFTWARE"), AND/OR USING SUCH SOFTWARE CONSTITUTES YOUR FULL
+ACCEPTANCE OF THE FOLLOWING TERMS. YOU MUST NOT PROCEED FURTHER IF YOU
+ARE NOT WILLING TO BE BOUND BY ALL THE TERMS SET FORTH HEREIN.
+
+Your use of the Software is subject to the Cisco End User License Agreement
+(EULA) and any relevant supplemental terms (SEULA) found at
+http://www.cisco.com/c/en/us/about/legal/cloud-and-software/software-terms.html.
+
+You hereby acknowledge and agree that certain Software and/or features are
+licensed for a particular term, that the license to such Software and/or
+features is valid only for the applicable term and that such Software and/or
+features may be shut down or otherwise terminated by Cisco after expiration
+of the applicable license term (e.g., 90-day trial period). Cisco reserves
+the right to terminate any such Software feature electronically or by any
+other means available. While Cisco may provide alerts, it is your sole
+responsibility to monitor your usage of any such term Software feature to
+ensure that your systems and networks are prepared for a shutdown of the
+Software feature.
+
+
+cisco ISR4431/K9 (JUNO-1RU) processor with 1653723K/6147K bytes of memory.
+Processor board ID FJC26181X8V
+Router operating mode: Autonomous
+4 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+4194304K bytes of physical memory.
+7081983K bytes of flash memory at bootflash:.
+
+%Error parsing bootflash:/isr4400-universalk9.17.12.05a.SPA.bin (No such file or directory)
+SETUP: new interface Service-Engine0/4/0 placed in "shutdown" state
+
+
+Press RETURN to get started!
+
+
+*Dec 24 20:52:21.552: %CRYPTO-5-SELF_TEST_START: Crypto algorithms release (Rel5a)
+       begin self-test
+*Dec 24 20:52:22.011: %CRYPTO-5-SELF_TEST_END: Crypto algoritms self-test completed successfully
+       All tests passed.
+*Dec 24 20:52:22.728: %ISR_THROUGHPUT-6-LEVEL: Throughput level has been set to 500000 kbps
+*Dec 24 20:52:25.605: %SMART_LIC-6-AGENT_ENABLED: Smart Agent for Licensing is enabled 
+*Dec 24 20:52:25.952: %SMART_LIC-6-EXPORT_CONTROLLED: Usage of export controlled features is not allowedESG-PM-ACL:[subsys-init] Init ESG-ACL subsystem starting
+
+*Dec 24 20:52:28.602: 
+*Dec 24 20:52:34.786: %SPANTREE-5-EXTENDED_SYSID: Extended SysId enabled for type vlan
+*Dec 24 20:52:34.979: %CRYPTO_ENGINE-5-CSDL_COMPLIANCE_ENFORCED: Cisco PSB security compliance is being enforced
+*Dec 24 20:52:34.979: %CRYPTO_ENGINE-5-CSDL_COMPLIANCE_EXCEPTION_ADDED: Cisco PSB security compliance exception has been added by this platform for use of RSA Key Size
+*Dec 24 20:52:35.122: %CRYPTO_ENGINE-5-CSDL_COMPLIANCE_EXCEPTION_ADDED: Cisco PSB security compliance exception has been added by Syslog Traps for use of MD5
+*Dec 24 20:52:35.122: %CRYPTO_ENGINE-5-CSDL_COMPLIANCE_EXCEPTION_ADDED: Cisco PSB security compliance exception has been added by Syslog Traps for use of DES
+*Dec 24 20:52:35.122: %CRYPTO_ENGINE-5-CSDL_COMPLIANCE_EXCEPTION_ADDED: Cisco PSB security compliance exception has been added by Syslog Traps for use of 3DES
+*Dec 24 20:52:35.356: %LINK-3-UPDOWN: Interface Lsmpi0, changed state to up
+*Dec 24 20:52:35.501: %CRYPTO_ENGINE-5-CSDL_COMPLIANCE_EXCEPTION_ADDED: Cisco PSB security compliance exception has been added by encrypt proc for use of 3DES
+*Dec 24 20:52:35.501: %CRYPTO_ENGINE-5-CSDL_COMPLIANCE_EXCEPTION_ADDED: Cisco PSB security compliance exception has been added by encrypt proc for use of MD5
+*Dec 24 20:52:35.501: %CRYPTO_ENGINE-5-CSDL_COMPLIANCE_EXCEPTION_ADDED: Cisco PSB security compliance exception has been added by encrypt proc for use of DES
+*Dec 24 20:52:35.528: %PNP-6-PNP_DISCOVERY_STARTED: PnP Discovery started
+*Dec 24 20:52:11.535: %BOOT-5-OPMODE_LOG: R0/0: binos: System booted in AUTONOMOUS mode
+*Dec 24 20:52:25.116: %CMRP_PFU-6-FANASSY_INSERTED: R0/0: cmand: Fan Assembly is inserted.
+*Dec 24 20:52:26.352: %CMLIB-6-THROUGHPUT_VALUE: R0/0: cmand: Throughput license found, throughput set to 500000 kbps
+*Dec 24 20:52:35.623: %LINK-3-UPDOWN: Interface EOBC0, changed state to up
+*Dec 24 20:52:35.624: %LINK-3-UPDOWN: Interface GigabitEthernet0, changed state to down
+*Dec 24 20:52:35.626: %IOSXE_RP_ALARM-6-INFO: ASSERT CRITICAL GigabitEthernet0 Physical Port Link Down 
+*Dec 24 20:52:35.626: %LINK-3-UPDOWN: Interface LIIN0, changed state to up
+*Dec 24 20:52:35.791: %SYS-5-CONFIG_P: Configured programmatically by process MGMT VRF Process from console as vty0
+*Dec 24 20:52:38.143: %IOSXE_MGMTVRF-6-CREATE_SUCCESS_INFO: Management vrf Mgmt-intf created with ID 1, ipv4 table-id 0x1, ipv6 table-id 0x1E000001
+*Dec 24 20:52:38.197: %LINEPROTO-5-UPDOWN: Line protocol on Interface Lsmpi0, changed state to up
+*Dec 24 20:52:38.198: %LINEPROTO-5-UPDOWN: Line protocol on Interface EOBC0, changed state to up
+*Dec 24 20:52:38.199: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0, changed state to down
+*Dec 24 20:52:38.199: %LINEPROTO-5-UPDOWN: Line protocol on Interface LIIN0, changed state to up
+*Dec 24 20:52:38.202: %SYS-5-CONFIG_P: Configured programmatically by process MGMT VRF Process from console as vty0
+*Dec 24 20:52:39.132: %ONEP_BASE-6-SS_ENABLED: ONEP: Service set Base was enabled by Default
+*Dec 24 20:52:39.839: %SYS-7-NVRAM_INIT_WAIT_TIME: Waited 0 seconds for NVRAM to be available
+*Dec 24 20:52:40.566: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named TP-self-signed-1298906784 has been generated or imported by crypto config
+*Dec 24 20:52:40.569: %SYS-6-PRIVCFG_DECRYPT_SUCCESS: Successfully apply the private config file
+*Dec 24 20:52:40.595: %SYS-4-CONFIG_NEWER: Configuration from version 17.12 may not be correctly understood
+*Dec 24 20:52:40.608: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: TP-self-signed-1298906784 created succesfully
+*Dec 24 20:52:40.610: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: SLA-TrustPoint created succesfully
+*Dec 24 20:52:42.166: %SYS-5-CONFIG_I: Configured from memory by console
+*Dec 24 20:52:42.201: %IOSXE_OIR-6-REMSPA: SPA removed from subslot 0/0, interfaces disabled
+*Dec 24 20:52:42.201: %IOSXE_OIR-6-REMSPA: SPA removed from subslot 0/4, interfaces disabled
+*Dec 24 20:52:42.204: %SPA_OIR-6-OFFLINECARD: SPA (ISR4431-X-4x1GE) offline in subslot 0/0
+*Dec 24 20:52:42.206: %SPA_OIR-6-OFFLINECARD: SPA (PVDM4-64) offline in subslot 0/4
+*Dec 24 20:52:42.406: %IOSXE_OIR-6-INSCARD: Card (fp) inserted in slot F0
+*Dec 24 20:52:42.406: %IOSXE_OIR-6-ONLINECARD: Card (fp) online in slot F0
+*Dec 24 20:52:42.449: %IOSXE_OIR-6-INSCARD: Card (cc) inserted in slot 0
+*Dec 24 20:52:42.449: %IOSXE_OIR-6-ONLINECARD: Card (cc) online in slot 0
+*Dec 24 20:52:42.478: %IOSXE_OIR-6-INSSPA: SPA inserted in subslot 0/0
+*Dec 24 20:52:42.478: %IOSXE_OIR-6-INSSPA: SPA inserted in subslot 0/4
+*Dec 24 20:52:42.851: %SSH-5-ENABLED: SSH 1.99 has been enabled
+*Dec 24 20:52:42.891: %SYS-5-RESTART: System restarted --
+Cisco IOS Software [Cupertino], ISR Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.9.4a, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2023 by Cisco Systems, Inc.
+Compiled Fri 20-Oct-23 10:59 by mcpre
+*Dec 24 20:52:43.010: %LINK-5-CHANGED: Interface GigabitEthernet0, changed state to administratively down
+*Dec 24 20:52:43.500: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named TP-self-signed-1298906784.server has been generated or imported by crypto-engine
+*Dec 24 20:52:47.912: %PNP-6-PNP_BEST_UDI_UPDATE: Best UDI [PID:ISR4431/K9,VID:V07,SN:FJC26181X8V] identified via (entity-mibs)
+*Dec 24 20:52:47.912: %PNP-6-PNP_CDP_UPDATE: Device UDI [PID:ISR4431/K9,VID:V07,SN:FJC26181X8V] identified for CDP
+*Dec 24 20:52:47.928: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Startup Config Present)
+*Dec 24 20:52:49.018: %SYS-6-BOOTTIME: Time taken to reboot after reload =  633 seconds
+*Dec 24 20:52:52.715: %SYS-5-CONFIG_P: Configured programmatically by process EPM CREATE DEFAULT CWA URL ACL from console as console
+*Dec 24 20:52:54.271: %SPA_OIR-6-ONLINECARD: SPA (ISR4431-X-4x1GE) online in subslot 0/0
+*Dec 24 20:52:56.301: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: CISCO_IDEVID_SUDI created succesfully
+*Dec 24 20:52:56.308: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named CISCO_IDEVID_SUDI has been generated or imported by pki-sudi
+*Dec 24 20:52:56.367: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: CISCO_IDEVID_SUDI0 created succesfully
+Router#
+*Dec 24 20:52:56.370: %PKI-2-NON_AUTHORITATIVE_CLOCK: PKI functions can not be initialized until an authoritative time source, like NTP, can be obtained.
+Router#
+Router#
+Router#
+*Dec 24 20:53:13.892: spa in 0/4, still in booting
+
+*Dec 24 20:53:20.525: modified extended attributes received from iomd(slot 0 bay 4 board 0)
+*Dec 24 20:53:20.526: %IOSXE_OIR-6-SOFT_RELOADSPA: SPA(PVDM4-64) reloaded on subslot 0/4
+*Dec 24 20:53:20.526: %SPA_OIR-6-OFFLINECARD: SPA (PVDM4-64) offline in subslot 0/4
+*Dec 24 20:53:27.180: %CMRP-5-CHASSIS_MONITOR_BOOT_TIME_PRINT: R0/0: cmand: Card F0 took 59 secs to boot
+*Dec 24 20:53:27.180: %CMRP-5-CHASSIS_MONITOR_BOOT_TIME_PRINT: R0/0: cmand: Card 0 took 54 secs to boot
+*Dec 24 20:53:43.893: spa in 0/4, still in booting
+
+*Dec 24 20:54:13.893: spa in 0/4, still in booting
+
+Router#
+Router#
+Router#
+Router#show run | in boot
+
+*Dec 24 20:54:26.492: Switch to new extended attribute for slot 0 bay 4boot-start-marker
+boot-end-marker
+diagnostic bootup level minimal
+Router#
+Router#
+Router#
+Router#
+Router#
+Router#show run | in boot
+boot-start-marker
+boot-end-marker
+diagnostic bootup level minimal
+Router#
+Router#show ver
+Router#show version | i 
+*Dec 24 20:54:43.893: spa in 0/4, still in booting
+reg
+Router#show version | i reg
+agree to comply with applicable laws and regulations. If you are unable
+Configuration register is 0x0
+Router#
+Router#
+Router#
+Router#dir 
+*Dec 24 20:54:57.272: %SPA_OIR-6-ONLINECARD: SPA (PVDM4-64) online in subslot 0/4|
+Router#dir | 
+Router#
+Router#
+Router#dir |
+*Dec 24 20:55:01.650: %LINK-3-UPDOWN: Interface Service-Engine0/4/0, changed state to up
+*Dec 24 20:55:02.650: %LINEPROTO-5-UPDOWN: Line protocol on Interface Service-Engine0/4/0, changed state to up i
+Router#dir | include 
+Router#dir | include 
+Router#dir | include 
+Router#
+Router#
+Router#
+Router#
+Router#
+Router#
+Router#
+Router#
+Router#dir | in bin
+30      -rw-        773068285  Dec 24 2025 20:33:24 +00:00  new-isr4400-universalk9.17.09.04a.SPA.bin
+29      -rw-        784796767  Dec 12 2025 07:08:44 +00:00  old-isr4400-universalk9.17.12.05a.SPA.bin
+Router#
+Router#
+*Dec 24 20:55:13.977: %CALL_HOME-6-CALL_HOME_ENABLED: Call-home is enabled by Smart Agent for Licensing.
+Router#
+Router#
+Router#
+Router#rename old-isr4400-universalk9.17.12.05a.SPA.bin   old-isr4400-univers$isr4400-universalk9.17.12.05a.SPA.bin   old-isr4400-universa         lk9.17.12versalk9.17.12.05a.SPA.bin   old-isr4400-universalk9.17.12.         05a.SPA.b17.12.05a.SPA.bin   old-isr4400-universalk9.17.12.05a.SPA.bi         nisr4400-universalk9.17.12.05a.SPA.bin isr4400-universalk9.17.12.05a.SPA.bin isr4400-universalk9.17.12.05a.SPA.bin isr4400-universalk9.17.12.05a.SPA.bin iversalk9.17.12.05a.SPA.bin   isr4400-universalk9.17.12.05a.SPA.binisr4400-universalk9.17.12.05a.SPA.bin   isr4400-universalk9.17.12.05a.$rename old-isr4400-universalk9.17.12.05a.SPA.bin   isr4400-universalk9
+Destination filename [isr4400-universalk9.17.12.05a.SPA.bin]? 
+Router#
+Router#
+*Dec 24 20:56:09.123: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+Router#
+Router#
+Router#$iversalk9.17.12.05a.SPA.bin   isr4400-universalk9.17.12.05a.SPA.bindir | in bin                                                        show version | i regdir | in bin        
+30      -rw-        773068285  Dec 24 2025 20:33:24 +00:00  new-isr4400-universalk9.17.09.04a.SPA.bin
+29      -rw-        784796767  Dec 12 2025 07:08:44 +00:00  isr4400-universalk9.17.12.05a.SPA.bin
+Router#
+Router#
+Router#
+Router#
+Router#show run | in boot
+boot-start-marker
+boot-end-marker
+diagnostic bootup level minimal
+Router#
+Router#show run |     version | in regist
+Configuration register is 0x0
+Router#
+Router#
+Router#
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#boot-start-marker
+Router(config)#boot system bootflash:isr4400-universalk9.17.12.05a.SPA.bin
+Router(config)#boot-end-marker
+Router(config)#end
+Router#
+Router#
+Router#
+Router#
+Router#
+*Dec 24 20:57:56.979: %SYS-5-CONFIG_I: Configured from console by console
+Router#
+Router#show run | in boot
+boot-start-marker
+boot system bootflash:isr4400-universalk9.17.12.05a.SPA.bin
+boot-end-marker
+diagnostic bootup level minimal
+Router#
+Router#
+Router#
+Router#
+Router#
+Router#
+Router#show con?
+configuration  connection  controllers  
+
+Router#show con   configuration ?
+  history  Display Configuration history
+  id       Display Config Change Tracking ID 
+  lock     Display configuration session lock
+  |        Output modifiers
+  <cr>     <cr>
+
+Router#show configuration 
+Using 2080 out of 33554432 bytes
+!
+! Last configuration change at 20:40:14 UTC Wed Dec 24 2025
+!
+version 17.12
+service timestamps debug datetime msec
+service timestamps log datetime msec
+platform qfp utilization monitor load 80
+platform punt-keepalive disable-kernel-core
+!
+hostname Router
+!
+boot-start-marker
+boot system bootflash:isr4400-universalk9.17.12.05a.SPA.bin
+boot-end-marker
+!
+!
+vrf definition Mgmt-intf
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family ipv6
+ --More--         
+Router#show confi
+Router#show configuration  ?
+configuration  
+
+Router#show configuration ?
+  history  Display Configuration history
+  id       Display Config Change Tracking ID 
+  lock     Display configuration session lock
+  |        Output modifiers
+  <cr>     <cr>
+
+Router#show configuration id ?
+  detail  Display Config Change Tracking ID details
+  |       Output modifiers
+  <cr>    <cr>
+
+Router#show configuration id 
+version:116 time:2025-12-24T20:57:55.025Z
+
+Router#
+Router#show run | in regi                  show ver
+Router#show version | in register
+Configuration register is 0x0
+Router#
+Router#
+Router#
+Router#
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#config
+Router(config)#config-re
+Router(config)#config-register 0x2102
+Router(config)#end
+Router#
+Router#
+Router#
+Router#
+*Dec 24 21:00:01.983: %SYS-5-CONFIG_I: Configured from console by console
+Router#
+Router#
+Router#
+Router#conf tshow version | in register
+Configuration register is 0x0 (will be 0x2102 at next reload)
+Router#show version | in registerconf t                    show version | in registerconfiguration id        run | in boot conf t            show version | in registrun | in boot      dir | in bin      show run | in bootversion | in registconf t                  show run | in bootconfiguration id version | in registerconf t                    show version | in register                          
+Router#
+Router#
+Router#wr
+Router#write 
+Building configuration...
+[OK]
+Router#
+*Dec 24 21:00:35.437: %SYS-6-PRIVCFG_ENCRYPT_SUCCESS: Successfully encrypted private config file
+Router#
+Router#
+Router#re
+Router#reload
+Router#
+Router#
+Router#r reload
+Proceed with reload? [confirm]
+
+*Dec 24 21:00:56.626: %SYS-5-RELOAD: Reload requested by console. Reload Reason: Reload Command.Dec 24 21:01:07.345: %PMAN-5-EXITACTION: R0/0: pvp: Process manager is exiting: process exit with reload chassis code
+
+
+
+Initializing Hardware ...
+
+Checking for PCIe device presence...done
+System integrity status: 0x610
+Rom image verified correctly
+
+
+System Bootstrap, Version 17.6.1, RELEASE SOFTWARE
+Copyright (c) 1994-2021 by cisco Systems, Inc.
+
+
+Current image running: Boot ROM0
+
+Last reset cause: LocalSoft
+ISR4431/K9 platform with 4194304 Kbytes of main memory
+
+
+........
+Located isr4400-universalk9.17.12.05a.SPA.bin
+#################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+
+Package header rev 3 structure detected
+IsoSize = 748548096
+Performing Integrity Check ...
+Performing Signature Verification ...
+RSA Signed RELEASE Image Signature Verification Successful.
+Image validated
+Dec 24 21:03:36.438: %BOOT-5-OPMODE_LOG: R0/0: binos: System booted in AUTONOMOUS mode
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           Cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software [Dublin], ISR Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.12.5a, RELEASE SOFTWARE (fc5)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Wed 09-Apr-25 01:12 by mcpre
+
+
+This software version supports only Smart Licensing as the software licensing mechanism.
+
+
+PLEASE READ THE FOLLOWING TERMS CAREFULLY. INSTALLING THE LICENSE OR
+LICENSE KEY PROVIDED FOR ANY CISCO SOFTWARE PRODUCT, PRODUCT FEATURE,
+AND/OR SUBSEQUENTLY PROVIDED SOFTWARE FEATURES (COLLECTIVELY, THE
+"SOFTWARE"), AND/OR USING SUCH SOFTWARE CONSTITUTES YOUR FULL
+ACCEPTANCE OF THE FOLLOWING TERMS. YOU MUST NOT PROCEED FURTHER IF YOU
+ARE NOT WILLING TO BE BOUND BY ALL THE TERMS SET FORTH HEREIN.
+
+Your use of the Software is subject to Cisco's General Terms and any 
+relevant supplemental terms found at
+https://www.cisco.com/site/us/en/about/legal/contract-experience/index.html.
+
+You hereby acknowledge and agree that certain Software and/or features are
+licensed for a particular term, that the license to such Software and/or
+features is valid only for the applicable term and that such Software and/or
+features may be shut down or otherwise terminated by Cisco after expiration
+of the applicable license term (e.g., 90-day trial period). Cisco reserves
+the right to terminate any such Software feature electronically or by any
+other means available. While Cisco may provide alerts, it is your sole
+responsibility to monitor your usage of any such term Software feature to
+ensure that your systems and networks are prepared for a shutdown of the
+Software feature.
+
+
+cisco ISR4431/K9 (JUNO-1RU) processor with 1638438K/6147K bytes of memory.
+Processor board ID FJC26181X8V
+Router operating mode: Autonomous
+4 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+4194304K bytes of physical memory.
+7081983K bytes of flash memory at bootflash:.
+
+VTP version is already in V1.
+SETUP: new interface Service-Engine0/4/0 placed in "shutdown" state
+
+
+Press RETURN to get started!
+
+
+*Dec 24 21:03:48.384: %CRYPTO-5-SELF_TEST_START: Crypto algorithms release (Rel5a), Entropy release (3.4.1)
+       begin self-test
+*Dec 24 21:03:48.758: %CRYPTO-5-SELF_TEST_END: Crypto algorithms self-test completed successfully
+       All tests passed.
+*Dec 24 21:03:51.184: %ISR_THROUGHPUT-6-LEVEL: Throughput level has been set to 500000 kbps
+*Dec 24 21:03:51.952: %SMART_LIC-6-AGENT_ENABLED: Smart Agent for Licensing is enabled 
+*Dec 24 21:03:52.302: %SMART_LIC-6-EXPORT_CONTROLLED: Usage of export controlled features is not allowed
+*Dec 24 21:03:58.716: SDWAN INFO: IOS-SDWAN-RP: Registered for chasfs events, rc 0
+*Dec 24 21:03:58.716: SDWAN ERR: Chasfs: failed to watch is_vmanaged, error - No such file or directory
+*Dec 24 21:03:58.716: SDWAN ERR: Chasfs: failed to watch vmanage_status, error - No such file or directory
+*Dec 24 21:04:01.236: %SPANTREE-5-EXTENDED_SYSID: Extended SysId enabled for type vlan
+*Dec 24 21:04:01.424: %CRYPTO_ENGINE-5-CSDL_COMPLIANCE_ENFORCED: Cisco PSB security compliance is being enforced
+*Dec 24 21:04:01.800: ESG: watched chasfs for vmanage status successfully
+*Dec 24 21:04:01.823: SDWAN INFO: Last reload is now set to "Reload Command"
+*Dec 24 21:04:01.844: %LINK-3-UPDOWN: Interface EOBC0, changed state to up
+*Dec 24 21:04:02.027: %PNP-6-PNP_DISCOVERY_STARTED: PnP Discovery started
+*Dec 24 21:03:36.434: %BOOT-5-OPMODE_LOG: R0/0: binos: System booted in AUTONOMOUS mode
+*Dec 24 21:03:50.918: %CMRP_PFU-6-FANASSY_INSERTED: R0/0: cmand: Fan Assembly is inserted.
+*Dec 24 21:03:52.151: %CMLIB-6-THROUGHPUT_VALUE: R0/0: cmand: Throughput license found, throughput set to 500000 kbps
+*Dec 24 21:04:02.137: %LINK-3-UPDOWN: Interface Lsmpi0, changed state to up
+*Dec 24 21:04:02.138: %LINK-3-UPDOWN: Interface LIIN0, changed state to up
+*Dec 24 21:04:02.138: %LINK-3-UPDOWN: Interface GigabitEthernet0, changed state to down
+*Dec 24 21:04:02.160: %IOSXE_RP_ALARM-6-INFO: ASSERT CRITICAL GigabitEthernet0 Physical Port Link Down 
+*Dec 24 21:04:02.622: %SYS-5-CONFIG_P: Configured programmatically by process MGMT VRF Process from console as vty0
+*Dec 24 21:04:04.925: %IOSXE_MGMTVRF-6-CREATE_SUCCESS_INFO: Management vrf Mgmt-intf created with ID 1, ipv4 table-id 0x1, ipv6 table-id 0x1E000001
+*Dec 24 21:04:04.975: %LINEPROTO-5-UPDOWN: Line protocol on Interface EOBC0, changed state to up
+*Dec 24 21:04:04.975: %LINEPROTO-5-UPDOWN: Line protocol on Interface Lsmpi0, changed state to up
+*Dec 24 21:04:04.976: %LINEPROTO-5-UPDOWN: Line protocol on Interface LIIN0, changed state to up
+*Dec 24 21:04:04.976: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0, changed state to down
+*Dec 24 21:04:04.982: %SYS-5-CONFIG_P: Configured programmatically by process MGMT VRF Process from console as vty0
+*Dec 24 21:04:05.768: %ONEP_BASE-6-SS_ENABLED: ONEP: Service set Base was enabled by Default
+*Dec 24 21:04:07.222: %SYS-7-NVRAM_INIT_WAIT_TIME: Waited 0 seconds for NVRAM to be available
+*Dec 24 21:04:08.016: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named TP-self-signed-1298906784 has been generated or imported by crypto config
+*Dec 24 21:04:08.020: %SYS-6-PRIVCFG_DECRYPT_SUCCESS: Successfully apply the private config file
+*Dec 24 21:04:08.064: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: TP-self-signed-1298906784 created succesfully
+*Dec 24 21:04:08.066: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: SLA-TrustPoint created succesfully
+*Dec 24 21:04:09.618: %SYS-5-CONFIG_I: Configured from memory by console
+*Dec 24 21:04:09.653: %IOSXE_OIR-6-REMSPA: SPA removed from subslot 0/0, interfaces disabled
+*Dec 24 21:04:09.653: %IOSXE_OIR-6-REMSPA: SPA removed from subslot 0/4, interfaces disabled
+*Dec 24 21:04:09.655: %SPA_OIR-6-OFFLINECARD: SPA (ISR4431-X-4x1GE) offline in subslot 0/0
+*Dec 24 21:04:09.656: %SPA_OIR-6-OFFLINECARD: SPA (PVDM4-64) offline in subslot 0/4
+*Dec 24 21:04:09.803: %IOSXE_OIR-6-INSCARD: Card (fp) inserted in slot F0
+*Dec 24 21:04:09.803: %IOSXE_OIR-6-ONLINECARD: Card (fp) online in slot F0
+*Dec 24 21:04:09.853: %IOSXE_OIR-6-INSCARD: Card (cc) inserted in slot 0
+*Dec 24 21:04:09.853: %IOSXE_OIR-6-ONLINECARD: Card (cc) online in slot 0
+*Dec 24 21:04:10.028: %IOSXE_OIR-6-INSSPA: SPA inserted in subslot 0/0
+*Dec 24 21:04:10.029: %IOSXE_OIR-6-INSSPA: SPA inserted in subslot 0/4
+*Dec 24 21:04:10.256: %SSH-5-ENABLED: SSH 2.0 has been enabled
+*Dec 24 21:04:10.338: %SYS-5-RESTART: System restarted --
+Cisco IOS Software [Dublin], ISR Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.12.5a, RELEASE SOFTWARE (fc5)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Wed 09-Apr-25 01:12 by mcpre
+*Dec 24 21:04:10.457: %LINK-5-CHANGED: Interface GigabitEthernet0, changed state to administratively down
+*Dec 24 21:04:11.359: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named TP-self-signed-1298906784.server has been generated or imported by crypto-engine
+*Dec 24 21:04:15.360: %PNP-6-PNP_BEST_UDI_UPDATE: Best UDI [PID:ISR4431/K9,VID:V07,SN:FJC26181X8V] identified via (entity-mibs)
+*Dec 24 21:04:15.360: %PNP-6-PNP_CDP_UPDATE: Device UDI [PID:ISR4431/K9,VID:V07,SN:FJC26181X8V] identified for CDP
+*Dec 24 21:04:15.360: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Startup Config Present)
+*Dec 24 21:04:19.920: %SYS-5-CONFIG_P: Configured programmatically by process EPM CREATE DEFAULT CWA URL ACL from console as console
+*Dec 24 21:04:21.745: %SPA_OIR-6-ONLINECARD: SPA (ISR4431-X-4x1GE) online in subslot 0/0
+*Dec 24 21:04:22.982: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: CISCO_IDEVID_SUDI created succesfully
+*Dec 24 21:04:22.988: %CRYPTO_ENGINE-5-KEY_ADDITION: A key named CISCO_IDEVID_SUDI has been generated or imported by pki-sudi
+*Dec 24 21:04:23.003: %PKI-6-TRUSTPOINT_CREATE: Trustpoint: CISCO_IDEVID_SUDI0 created succesfully
+*Dec 24 21:04:23.006: %PKI-2-NON_AUTHORITATIVE_CLOCK: PKI functions can not be initialized until an authoritative time source, like NTP, can be obtained.
+*Dec 24 21:04:23.129: %SYS-6-BOOTTIME: Time taken to reboot after reload =  207 seconds
+*Dec 24 21:04:41.347: spa in 0/4, still in booting
+
+*Dec 24 21:04:47.136: modified extended attributes received from iomd(slot 0 bay 4 board 0)
+*Dec 24 21:04:47.137: %IOSXE_OIR-6-SOFT_RELOADSPA: SPA(PVDM4-64) reloaded on subslot 0/4
+*Dec 24 21:04:47.138: %SPA_OIR-6-OFFLINECARD: SPA (PVDM4-64) offline in subslot 0/4
+*Dec 24 21:04:54.984: %CMRP-5-CHASSIS_MONITOR_BOOT_TIME_PRINT: R0/0: cmand: Card F0 took 61 secs to boot
+*Dec 24 21:04:54.984: %CMRP-5-CHASSIS_MONITOR_BOOT_TIME_PRINT: R0/0: cmand: Card 0 took 56 secs to boot
+*Dec 24 21:05:11.348: spa in 0/4, still in booting
+
+*Dec 24 21:05:41.348: spa in 0/4, still in booting
+
+*Dec 24 21:05:53.073: Switch to new extended attribute for slot 0 bay 4
+*Dec 24 21:06:11.348: spa in 0/4, still in booting
+
+*Dec 24 21:06:22.851: %SPA_OIR-6-ONLINECARD: SPA (PVDM4-64) online in subslot 0/4
+*Dec 24 21:06:27.246: %LINK-3-UPDOWN: Interface Service-Engine0/4/0, changed state to up
+*Dec 24 21:06:28.246: %LINEPROTO-5-UPDOWN: Line protocol on Interface Service-Engine0/4/0, changed state to up
+Router#
+Router#
+Router#show ver
+Cisco IOS XE Software, Version 17.12.05a
+Cisco IOS Software [Dublin], ISR Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.12.5a, RELEASE SOFTWARE (fc5)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Wed 09-Apr-25 01:12 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2025 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: 17.6.1
+
+Router uptime is 3 minutes
+Uptime for this control processor is 4 minutes
+ --More--         
+Router#
+*Dec 24 21:07:36.527: %SMART_LIC-3-COMM_FAILED: Communications failure with the Cisco Smart License Utility (CSLU) : Unable to resolve server hostname/domain name 
+Router#
+Router#
+Router#
